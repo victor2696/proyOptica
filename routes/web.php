@@ -169,3 +169,8 @@ Route::group(['middleware' => 'bowner_employee'], function() {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('lang/{lang}', function($lang) {
+	\Session::put('lang', $lang);
+	return \Redirect::back();
+  })->middleware('web')->name('change_lang');

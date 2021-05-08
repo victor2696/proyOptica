@@ -25,7 +25,8 @@
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
-                <div class="navbar-header">
+                <div class="navbar-header col-lg-12">
+                <div class="col-lg-10">
 
                     <!-- Collapsed Hamburger -->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
@@ -39,6 +40,11 @@
                     <a class="navbar-brand" style="color: #3097D1;" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
+                    </div>
+                    <div class="col-lg-2">
+                    <a href="{{ route('change_lang', ['lang' => 'es']) }}"><img alt='MX' src='images/mx-icon.png'></a>
+                    <a href="{{ route('change_lang', ['lang' => 'en']) }}"><img alt='MX' src='images/usa-icon.png'></a>
+                    </div>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">

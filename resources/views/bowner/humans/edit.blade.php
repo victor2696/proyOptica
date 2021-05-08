@@ -70,6 +70,12 @@
 					{!! Form::label('photo', 'Photo:') !!}
 					{!! Form::file('photo', null, ['class'=>'form-control']) !!}
 				</div>
+
+				<div class="form-group col-sm-6">
+					{!! Form::label('email', 'E-mail (*):') !!}
+					{!! Form::text('email', null, ['class'=>'form-control']) !!}
+				</div>
+
 			</div>
 			
 			<div class="form-group">

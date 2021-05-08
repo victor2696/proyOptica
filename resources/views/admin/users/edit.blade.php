@@ -11,7 +11,7 @@
 		<div class="col-sm-9">
 			{!! Form::model($user, ['method'=>'PATCH', 'action'=>['AdminUsersController@update', $user->id], 'files'=>true]) !!}
 			<div class="form-group">
-				{!! Form::label('name', 'Name (*):') !!}
+				{!! Form::label('name', trans('misTraducciones.name')) !!}
 				{!! Form::text('name', null, ['class'=>'form-control', 'required']) !!}
 			</div>
 
@@ -46,7 +46,7 @@
 			</div>
 			
 			<div class="form-group">
-				{!! Form::submit('Save', ['class'=>'btn btn-primary col-sm-2']) !!}
+				{!! Form::submit(trans('misTraducciones.save'), ['class'=>'btn btn-primary col-sm-2']) !!}
 			</div>
 
 			{!! Form::close() !!}

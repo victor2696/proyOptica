@@ -18,6 +18,7 @@
 	        <th>Address</th>
 	        <th>Phone</th>
 	        <th>ID#</th>
+			<th>email</th>
 	      </tr>
 	    </thead>
 	    <tbody>
@@ -34,6 +35,7 @@
 				<td>{{$human->address1 .','. $human->address2}}</td>
 				<td>{{$human->phone}}</td>
 				<td>{{$human->idnum}}</td>
+				<td>{{$human->email}}</td>
 			  </tr>
 			@endforeach
 		@endif  

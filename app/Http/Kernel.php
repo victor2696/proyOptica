@@ -30,6 +30,8 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            \App\Http\Middleware\SetLang::class,
+
         ],
 
         'api' => [
@@ -57,4 +59,5 @@ class Kernel extends HttpKernel
         'bowner_employee' => \App\Http\Middleware\BownerEmployee::class,
         'bowner_manager' => \App\Http\Middleware\BownerManager::class,
     ];
+    
 }
